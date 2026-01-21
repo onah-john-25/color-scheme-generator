@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Scheme Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6d58c9287a.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+
+            <!-- controls -->
+            <div class="controls">
+                <form class="color-form">
+                    <input type="color" name="color" class="color-input" value="#0047AB" aria-label="pick a color.">
+
+                    <select class="color-mode-input" aria-label="select color scheme." name="mode">
+                        <option value="monochrome">Monochrome</option>
+                        <option value="analogic">Analogic</option>
+                        <option value="complement">Complement</option>
+                        <option value="triad">Triad</option>
+                    </select>
+
+                <button type="submit" class="get-color-btn">Get Color Scheme</button>
+                </form>
+            </div>
+
+            <!-- colors -->
+            <div class="colors" aria-label="color-palette">
+                <!-- colors via js -->
+
+                <span class="message">Pick a color!.</span>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
